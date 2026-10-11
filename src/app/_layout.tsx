@@ -5,6 +5,7 @@ import { useColorScheme } from 'react-native';
 import Header from '@/app/header';
 import { AnimatedSplashOverlay } from '@/components/animated-icon';
 import AppTabs from '@/components/app-tabs';
+import { Habitude } from '@/components/ui/habitude';
 
 SplashScreen.preventAutoHideAsync();
 
@@ -14,6 +15,7 @@ export default function TabLayout() {
     <ThemeProvider value={colorScheme === 'dark' ? DarkTheme : DefaultTheme}>
       <AnimatedSplashOverlay />
       <Header />
+      <Habitude />
       <AppTabs />
     </ThemeProvider>
   );
